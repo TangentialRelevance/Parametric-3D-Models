@@ -49,7 +49,8 @@ Bottom = 15; // The distance from the bottom of the plate to the bottom of the s
 // Some calculated figures
 TotalWidth = PlateWidth + 2 * Outside; // The overall width of the stand
 TotalThickness = (SlotSpacing + SlotThickness) * Slots; // The overall depth of the stand without feet
-SlotCenters = [-(TotalThickness - SlotSpacing) / 2 : SlotSpacing + SlotThickness : TotalThickness / 2]; // Center coordinates for the slots, based on 0 being the center of the stand
+TotalSlotSpacing = SlotSpacing + SlotThickness;
+SlotCenters = [-(TotalThickness - TotalSlotSpacing) / 2 : TotalSlotSpacing : TotalThickness / 2]; // Center coordinates for the slots, based on 0 being the center of the stand
 
 OutsideHeight = Bottom + SlotHeight; // The height of the outside of the stand
 InsideHeight = Bottom + SlotDepth; // The height of the inside of the stand
