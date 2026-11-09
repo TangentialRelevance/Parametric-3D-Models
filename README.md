@@ -1,2 +1,7 @@
 # Parametric-3D-Models
-A collection of parametric 3D models written in OpenSCAD.  This repository combines some of my simple, single file models, that don't justify having their own repositories to track changes.  These scripts are used with https://github.com/openscad/openscad to generate models in a format that's ready to be sliced for 3D printing.
+A collection of parametric 3D models written in OpenSCAD.  This repository combines some of my simple, single file models, that don't justify having their own repositories to track changes.  These scripts are used with https://github.com/openscad/openscad to generate models in a format that's ready to be sliced for 3D printing.  Because OpenSCAD hasn't had an official release since 2021, these scripts are intended for use with recent release candidate or developer snapshot builds.
+
+## Plate Holder for Bambu Lab X2D 3D Printer
+`BambuX2DPlateStand.scad` produces a simple stand to hold the 256mm × 256mm build plate for this and similar Bambu Lab printers.  Plates are inserted vertically with the tab pointing downwards.  The script has several parameters for customization.  The most important is the parameter for the number of slots, which can be used to build a stand for 2 to 12 build plates.  There are also parameters to control the generation of support feet for stability.  For example, feet can be added to both sides for a freestanding stand, or on one side only for a stand that's going to be up against a vertical surface.
+
+This model doesn't require anything special to print.  There are no overhangs to need support and this prints well for me using the default settings for PLA through a 0.4mm nozzle.
